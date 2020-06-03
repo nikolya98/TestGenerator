@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ed0b837-df48-4616-b465-4d5d6dda2382" name="Default Changelist" comment="" />
+    <list default="true" id="1ed0b837-df48-4616-b465-4d5d6dda2382" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/testGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/testGenerator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruc_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/ruc_types.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_tmp1.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_tmp1.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,18 +40,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1cULrLFkJhOpYNXbIAr0B6IAxEG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
-  <component name="RunManager" selected="Python.ruc_types">
+  <component name="RunManager" selected="Python.objects">
     <configuration name="funcs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="testGenerator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,6 +101,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="objects" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="testGenerator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/objects.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ruc_types" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="testGenerator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,8 +146,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ruc_types" />
+        <item itemvalue="Python.objects" />
         <item itemvalue="Python.funcs" />
+        <item itemvalue="Python.ruc_types" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -118,23 +171,59 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="209" key="GridCell.Tab.0.bottom" timestamp="1590945676304">
-      <screen x="0" y="0" width="1536" height="821" />
+    <state width="1893" height="297" key="GridCell.Tab.0.bottom" timestamp="1591187654247">
+      <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state width="1493" height="209" key="GridCell.Tab.0.bottom/0.0.1536.821@0.0.1536.821" timestamp="1590945676304" />
-    <state width="1493" height="209" key="GridCell.Tab.0.center" timestamp="1590945676303">
-      <screen x="0" y="0" width="1536" height="821" />
+    <state width="1893" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1034@0.0.1920.1034" timestamp="1591187654247" />
+    <state width="1893" height="297" key="GridCell.Tab.0.center" timestamp="1591187654246">
+      <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state width="1493" height="209" key="GridCell.Tab.0.center/0.0.1536.821@0.0.1536.821" timestamp="1590945676303" />
-    <state width="1493" height="209" key="GridCell.Tab.0.left" timestamp="1590945676303">
-      <screen x="0" y="0" width="1536" height="821" />
+    <state width="1893" height="297" key="GridCell.Tab.0.center/0.0.1920.1034@0.0.1920.1034" timestamp="1591187654246" />
+    <state width="1893" height="297" key="GridCell.Tab.0.left" timestamp="1591187654246">
+      <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state width="1493" height="209" key="GridCell.Tab.0.left/0.0.1536.821@0.0.1536.821" timestamp="1590945676303" />
-    <state width="1493" height="209" key="GridCell.Tab.0.right" timestamp="1590945676304">
-      <screen x="0" y="0" width="1536" height="821" />
+    <state width="1893" height="297" key="GridCell.Tab.0.left/0.0.1920.1034@0.0.1920.1034" timestamp="1591187654246" />
+    <state width="1893" height="297" key="GridCell.Tab.0.right" timestamp="1591187654246">
+      <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.821@0.0.1536.821" timestamp="1590945676304" />
+    <state width="1893" height="297" key="GridCell.Tab.0.right/0.0.1920.1034@0.0.1920.1034" timestamp="1591187654246" />
+    <state width="1893" height="328" key="GridCell.Tab.1.bottom" timestamp="1591186752965">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state width="1893" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1034@0.0.1920.1034" timestamp="1591186752965" />
+    <state width="1893" height="328" key="GridCell.Tab.1.center" timestamp="1591186752965">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state width="1893" height="328" key="GridCell.Tab.1.center/0.0.1920.1034@0.0.1920.1034" timestamp="1591186752965" />
+    <state width="1893" height="328" key="GridCell.Tab.1.left" timestamp="1591186752965">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state width="1893" height="328" key="GridCell.Tab.1.left/0.0.1920.1034@0.0.1920.1034" timestamp="1591186752965" />
+    <state width="1893" height="328" key="GridCell.Tab.1.right" timestamp="1591186752965">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state width="1893" height="328" key="GridCell.Tab.1.right/0.0.1920.1034@0.0.1920.1034" timestamp="1591186752965" />
+    <state x="146" y="136" key="SettingsEditor" timestamp="1591101241773">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state x="146" y="136" key="SettingsEditor/0.0.1920.1034@0.0.1920.1034" timestamp="1591101241773" />
     <state x="457" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1590915863515">
       <screen x="0" y="0" width="1536" height="821" />
     </state>
@@ -143,10 +232,5 @@
       <screen x="0" y="0" width="1536" height="821" />
     </state>
     <state x="431" y="142" width="672" height="678" key="search.everywhere.popup/0.0.1536.821@0.0.1536.821" timestamp="1590938960059" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/testGenerator$funcs.coverage" NAME="funcs Coverage Results" MODIFIED="1590923547542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/testGenerator$main.coverage" NAME="main Coverage Results" MODIFIED="1590918080322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/testGenerator$ruc_types.coverage" NAME="ruc_types Coverage Results" MODIFIED="1590939633718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
