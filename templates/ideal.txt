@@ -1,4 +1,5 @@
-Using($A, $B)
+Using($A, 
+$B)
 
 Where(
     $A.Type -> int
