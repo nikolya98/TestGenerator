@@ -1,0 +1,8 @@
+Using($A, $B)
+
+
+Generate(
+{
+    $A + $B;
+}
+)

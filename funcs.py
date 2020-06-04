@@ -57,24 +57,3 @@ def object_verify(obj, d_type, syn_type):
     else:
         print('ОК')
         # Проверяем попадет ли заданное значение в диапазон значений типа данных объекта
-
-
-def generate(path='templates/'):
-    '''
-    Функция построчно читает шаблоны .txt, расположенный в path
-    и осуществляет запись в tests/test_name.c'
-    '''
-
-    files = os.listdir(path)
-    temps = [f for f in files if f.endswith('.txt')]
-
-    for temp in temps:
-        with open(f'{path}{temp}', 'r', encoding='utf-8') as tmp:
-            line = tmp.readline()
-            test = open(f'tests/test_{temp.replace(".txt", "")}.c', 'w+', encoding='utf-8')
-
-            while line:
-                test.write(line)
-                line = tmp.readline()
-
-            test.close()

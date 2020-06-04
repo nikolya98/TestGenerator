@@ -20,13 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ed0b837-df48-4616-b465-4d5d6dda2382" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/testGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/testGenerator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analyzer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/funcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruc_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/ruc_types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_tmp1.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_tmp1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruc_types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/syntax_types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/int_temlate.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tmp1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_tmp1.c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +60,71 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
-  <component name="RunManager" selected="Python.objects">
+  <component name="RunManager" selected="Python.analyzer (1)">
+    <configuration name="analyzer (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="testGenerator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyzer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="analyzer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="testGenerator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Python_Lab\TestGenerator\analyzer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="classes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="testGenerator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\Python_Lab\TestGenerator\classes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="funcs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="testGenerator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,49 +139,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/funcs.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="testGenerator" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="objects" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="testGenerator" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/objects.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,10 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.objects" />
-        <item itemvalue="Python.funcs" />
+        <item itemvalue="Python.analyzer (1)" />
+        <item itemvalue="Python.analyzer" />
         <item itemvalue="Python.ruc_types" />
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.classes" />
+        <item itemvalue="Python.funcs" />
       </list>
     </recent_temporary>
   </component>
@@ -184,42 +210,46 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1893" height="297" key="GridCell.Tab.0.bottom" timestamp="1591187654247">
+    <state x="630" y="23" key="#ruc_types" timestamp="1591258415522">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state x="630" y="23" key="#ruc_types/0.0.1920.1034@0.0.1920.1034" timestamp="1591258415522" />
+    <state width="1893" height="297" key="GridCell.Tab.0.bottom" timestamp="1591277744689">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state width="1493" height="209" key="GridCell.Tab.0.bottom/0.0.1536.821@0.0.1536.821" timestamp="1590945676304" />
-    <state width="1893" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1034@0.0.1920.1034" timestamp="1591187654247" />
-    <state width="1893" height="297" key="GridCell.Tab.0.center" timestamp="1591187654246">
+    <state width="1893" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1034@0.0.1920.1034" timestamp="1591277744689" />
+    <state width="1893" height="297" key="GridCell.Tab.0.center" timestamp="1591277744688">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state width="1493" height="209" key="GridCell.Tab.0.center/0.0.1536.821@0.0.1536.821" timestamp="1590945676303" />
-    <state width="1893" height="297" key="GridCell.Tab.0.center/0.0.1920.1034@0.0.1920.1034" timestamp="1591187654246" />
-    <state width="1893" height="297" key="GridCell.Tab.0.left" timestamp="1591187654246">
+    <state width="1893" height="297" key="GridCell.Tab.0.center/0.0.1920.1034@0.0.1920.1034" timestamp="1591277744688" />
+    <state width="1893" height="297" key="GridCell.Tab.0.left" timestamp="1591277744688">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state width="1493" height="209" key="GridCell.Tab.0.left/0.0.1536.821@0.0.1536.821" timestamp="1590945676303" />
-    <state width="1893" height="297" key="GridCell.Tab.0.left/0.0.1920.1034@0.0.1920.1034" timestamp="1591187654246" />
-    <state width="1893" height="297" key="GridCell.Tab.0.right" timestamp="1591187654246">
+    <state width="1893" height="297" key="GridCell.Tab.0.left/0.0.1920.1034@0.0.1920.1034" timestamp="1591277744688" />
+    <state width="1893" height="297" key="GridCell.Tab.0.right" timestamp="1591277744688">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.821@0.0.1536.821" timestamp="1590945676304" />
-    <state width="1893" height="297" key="GridCell.Tab.0.right/0.0.1920.1034@0.0.1920.1034" timestamp="1591187654246" />
-    <state width="1893" height="328" key="GridCell.Tab.1.bottom" timestamp="1591186752965">
+    <state width="1893" height="297" key="GridCell.Tab.0.right/0.0.1920.1034@0.0.1920.1034" timestamp="1591277744688" />
+    <state width="1893" height="328" key="GridCell.Tab.1.bottom" timestamp="1591274466872">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
-    <state width="1893" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1034@0.0.1920.1034" timestamp="1591186752965" />
-    <state width="1893" height="328" key="GridCell.Tab.1.center" timestamp="1591186752965">
+    <state width="1893" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1034@0.0.1920.1034" timestamp="1591274466872" />
+    <state width="1893" height="328" key="GridCell.Tab.1.center" timestamp="1591274466872">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
-    <state width="1893" height="328" key="GridCell.Tab.1.center/0.0.1920.1034@0.0.1920.1034" timestamp="1591186752965" />
-    <state width="1893" height="328" key="GridCell.Tab.1.left" timestamp="1591186752965">
+    <state width="1893" height="328" key="GridCell.Tab.1.center/0.0.1920.1034@0.0.1920.1034" timestamp="1591274466872" />
+    <state width="1893" height="328" key="GridCell.Tab.1.left" timestamp="1591274466872">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
-    <state width="1893" height="328" key="GridCell.Tab.1.left/0.0.1920.1034@0.0.1920.1034" timestamp="1591186752965" />
-    <state width="1893" height="328" key="GridCell.Tab.1.right" timestamp="1591186752965">
+    <state width="1893" height="328" key="GridCell.Tab.1.left/0.0.1920.1034@0.0.1920.1034" timestamp="1591274466872" />
+    <state width="1893" height="328" key="GridCell.Tab.1.right" timestamp="1591274466872">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
-    <state width="1893" height="328" key="GridCell.Tab.1.right/0.0.1920.1034@0.0.1920.1034" timestamp="1591186752965" />
+    <state width="1893" height="328" key="GridCell.Tab.1.right/0.0.1920.1034@0.0.1920.1034" timestamp="1591274466872" />
     <state x="146" y="136" key="SettingsEditor" timestamp="1591101241773">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>

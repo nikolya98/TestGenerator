@@ -1,5 +1,6 @@
 Using($A, $B)
-Where
+
+Where(
     $A.Type -> int
     $A.SyntaxType -> var
     $A.id -> a
@@ -8,8 +9,5 @@ Where
     $B.SyntaxType -> var
     $B.id -> b
     $B.value -> 5
-Generate(
-{
-    $A + $B
-}
 )
+
