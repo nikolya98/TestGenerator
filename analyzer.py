@@ -98,73 +98,102 @@ def using_analyze(body):
     return used_entities
 
 
-def description_analyze(body, object_name, field_name):
+def description_analyze(body, object_name):
     '''
-    Функция фуенкция возвращает строку с описанием объекта
+    Функция фуенкция возвращает словарь с описанием свойств (атрибутов) объекта.
     '''
 
-    # if '$' in object_name:
-    #     object_name = object_name.replace('$', r'\\\$')
-    #     print(object_name)
+    information = {}
 
-    pattern = f'\\{object_name}.{field_name}[\s\S]+?;'
-    description_march = re.search(pattern, body, re.IGNORECASE)
-    description = description_march.group()
-    pattern_accuracy = r'>[\s\S]+?;'
-    description_accuracy_march = re.search(pattern_accuracy, description)
-    description_accuracy = description_accuracy_march.group()
+    if '$' in object_name:
+        object_name = object_name.replace('$', '\$')
+        field_names = ['Type', 'SyntaxType', 'id', 'value']
 
-    if field_name.lower() == 'type' or 'syntaxtype':
-        res_pattern = r'[a-zA-Z]+'
-        res_description = re.findall(res_pattern, description_accuracy[1:-1], re.IGNORECASE)
+    if object_name == '!op':
+        object_name = object_name.replace('!', '\!')
+        field_names = ['Vals']
 
-    if field_name.lower() == 'id':
-        res_pattern = r'[a-zA-Z_]'
-        res_description = re.findall(res_pattern, description_accuracy[1:-1], re.IGNORECASE)
+    for field_name in field_names:
+        pattern = f'{object_name}.{field_name}[\s\S]*?;'
+        description_march = re.search(pattern, body, re.IGNORECASE)
+        if not description_march:
+            information[f'{field_name}'] = []
+            continue
+        description = description_march.group()
+        pattern_accuracy = r'>[\s\S]*?;'
+        description_accuracy_march = re.search(pattern_accuracy, description)
+        if not description_accuracy_march:
+            information[f'{field_name}'] = []
+            continue
+        description_accuracy = description_accuracy_march.group()
 
-    if field_name.lower() == 'value':
-        res_pattern = r'.*'
-        res_description = re.search(res_pattern, description_accuracy[1:-1], re.IGNORECASE)
-        res_description = res_description.group().lstrip()
+        if field_name.lower() == 'vals':
+            # Изменить регулярное выражение!!!
+            res_pattern = r'[\S^,]+'
+            res_description = re.findall(res_pattern, description_accuracy[1:-1], re.IGNORECASE)
+            # if res_description:
+            #     res_description = res_description.group()
+            #     if ',' in res_description:
+            #         res_description = res_description.replace(' ', '')
+            #         res_description = res_description.split(',')
+            information[f'{field_name}'] = res_description
 
-    return res_description
+        if field_name.lower() == 'type' or field_name.lower() == 'syntaxtype':
+            res_pattern = r'[a-zA-Z]+'
+            res_description = re.findall(res_pattern, description_accuracy[1:-1], re.IGNORECASE)
+            information[f'{field_name}'] = res_description
+
+        if field_name.lower() == 'id':
+            res_pattern = r'[a-zA-Z_]'
+            res_description = re.findall(res_pattern, description_accuracy[1:-1], re.IGNORECASE)
+            information[f'{field_name}'] = res_description
+
+        if field_name.lower() == 'value':
+            if '"' in description_accuracy:
+                res_pattern = r'"[\s\S^"]+"'
+            else:
+                res_pattern = r'[\.\d]+'
+            res_description = re.search(res_pattern, description_accuracy[1:-1], re.IGNORECASE)
+            if res_description:
+                res_description = res_description.group().lstrip()
+            information[f'{field_name}'] = res_description
+    return information
 
 
 def where_analyze(body, info):
     '''
-    Функция анализирует содержимое блока where и ...
+    Функция анализирует содержимое блока where и возвращает словарь с описанием объектов.
+    Структура словаря {'Объект': {'Свойство': [Значения]}}
+
+    Пример:
+    {'$A': {'Type': ['char'], 'SyntaxType': ['var'], 'id': ['a'], 'value': '"4.5"'},
+    '$B': {'Type': ['int'], 'SyntaxType': ['var'], 'id': ['b'], 'value': '5'},
+    '!op': {'Vals': ['+', '-']}}
     '''
 
     objects = info['objects']
+    operator = info['operator']
 
     objects_info = {}
-    information = {}
 
     for object in objects:
-        information['Type'] = description_analyze(body, object, 'Type')
-        information['SyntaxType'] = description_analyze(body, object, 'SyntaxType')
-        information['ID'] = description_analyze(body, object, 'id')
-        information['Value'] = description_analyze(body, object, 'value')
+        information = description_analyze(body, object)
         objects_info[f'{object}'] = information
 
-    # if operator:
-    #     pass
+    if operator:
+        information = description_analyze(body, '!op')
+        objects_info['!op'] = information
 
     return  objects_info
 
 
 PATH = 'templates/'
+
+# Проверка функций
 temps = get_templates()
-
-
 cats = analyze(temps) # категории шблонов (словарь)
-
 full_temp = cats['full_fledged'] # полноценные шаблоны (список)
 using_body = get_body(full_temp[0], 'using') # блок описания using (строка)
 info = using_analyze(using_body) # словарь, содержащий список объвленных объектов и флаг использования оператора
-
-where_body = get_body(full_temp[0], 'where')
-
-
-# print(where_analyze(where_body, info))
-# print(description_analyze(where_body, '$A', 'Type'))
+where_body = get_body(full_temp[0], 'where') # Строка - содержимое блока where
+print(where_analyze(where_body, info)) # Словарь - описание объектов
