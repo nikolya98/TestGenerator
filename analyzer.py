@@ -2,6 +2,9 @@ import os
 import re
 
 
+PATH = 'templates/'
+
+
 def get_templates():
     '''
     Функция возвращает список с названиями файлов .txt, содержащих шаблоны на макроязыке
@@ -64,6 +67,13 @@ def get_body(temp, area):
     Функция возвращает содержимое указанного блока в виде строки.
     '''
 
+    cute_end = -1
+
+    if area == 'temp_body':
+        pattern = r'[\s\S]*'
+        cute_start = 0
+        cute_end = 0
+
     if area.lower() == 'using':
         pattern = r'using\([\s\S^)]+?\)'
         cute_start = 6
@@ -80,8 +90,11 @@ def get_body(temp, area):
         text = tmp.readlines()
         text_to_str = ''.join(text)
         search_body = re.search(pattern, text_to_str, re.IGNORECASE)
-        body = search_body.group()
-        body = body[cute_start: -1]
+        if search_body:
+            body = search_body.group()
+            body = body[cute_start: len(body) - cute_end]
+        else:
+            body = str(search_body)
     return body
 
 
@@ -128,14 +141,8 @@ def description_analyze(body, object_name):
         description_accuracy = description_accuracy_march.group()
 
         if field_name.lower() == 'vals':
-            # Изменить регулярное выражение!!!
-            res_pattern = r'[\S^,]+'
+            res_pattern = r'[^\s,]+'
             res_description = re.findall(res_pattern, description_accuracy[1:-1], re.IGNORECASE)
-            # if res_description:
-            #     res_description = res_description.group()
-            #     if ',' in res_description:
-            #         res_description = res_description.replace(' ', '')
-            #         res_description = res_description.split(',')
             information[f'{field_name}'] = res_description
 
         if field_name.lower() == 'type' or field_name.lower() == 'syntaxtype':
@@ -185,15 +192,3 @@ def where_analyze(body, info):
         objects_info['!op'] = information
 
     return  objects_info
-
-
-PATH = 'templates/'
-
-# Проверка функций
-temps = get_templates()
-cats = analyze(temps) # категории шблонов (словарь)
-full_temp = cats['full_fledged'] # полноценные шаблоны (список)
-using_body = get_body(full_temp[0], 'using') # блок описания using (строка)
-info = using_analyze(using_body) # словарь, содержащий список объвленных объектов и флаг использования оператора
-where_body = get_body(full_temp[0], 'where') # Строка - содержимое блока where
-print(where_analyze(where_body, info)) # Словарь - описание объектов
