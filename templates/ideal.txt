@@ -1,15 +1,14 @@
-Using($A, 
-$B)
+Using($A, $B, !op)
 
 Where(
-    $A.Type -> int
-    $A.SyntaxType -> var
-    $A.id -> a
-    $A.value -> 4
-    $B.Type -> int
-    $B.SyntaxType -> var
-    $B.id -> b
-    $B.value -> 5
+    $A.Type -> int;
+    $A.SyntaxType -> var;
+    $A.id -> a;
+    $A.value -> 4.5;
+    $B.Type -> int;
+    $B.SyntaxType -> var;
+    $B.id -> b;
+    $B.value -> 5;
 )
 
 Generate(
